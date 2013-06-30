@@ -2,15 +2,15 @@ GoPasswordCreator
 =================
 
 This program is used for generating passwords.
-The user can choose, which character-group will be used to generate the password.
-For example: lower case letters, numbers and so on.
-It is also possible for the user to define his/her own set of characters, which will be used to create the password.
+The user can choose which character-group will be used to generate the password.
+For example: lower case letters, numbers, etc. 
+It is also possible for the user to define his/her own set of characters which will be used to create the password.
 
 
 Compilation
 ===========
 
-The easiest way to compile the Password-Creator is, just to use the new "go" tool and run "go build" 
+The easiest way to compile the Password-Creator is just to use the new "go" tool and run "go build" 
 and it will generate a binary called "GoPasswordCreator"
 
 
@@ -33,14 +33,14 @@ There are several arguments, which can be passed to the Password-Creator:
 Examples
 ========
 
-	password_creator --lower --upper --numbers
+	GoPasswordCreator --lower --upper --numbers
 This Password could contain lower-case letters, upper-case letters and numbers
 
-	password_creator --lower --own "?="
+	GoPasswordCreator --lower --own "?="
 This password could contain lower-case letters and those two characters ("?" and "="), which the user has passed to the Password-Creator
 
-	password_creator --lower=false --upper=true
+	GoPasswordCreator --lower=false --upper=true
 This password could contain upper-case letters. Lower-case letters will not be used to generate the password
 
-	password_creator --all --length 8 --count 5 --file /home/d3xter/passwords.txt
+	GoPasswordCreator --all --length 8 --count 5 --file /home/d3xter/passwords.txt
 5 Passwords with 8 characters per password will be written into /home/d3xter/passwords.txt
