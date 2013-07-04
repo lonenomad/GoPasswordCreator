@@ -44,3 +44,12 @@ This password could contain upper-case letters. Lower-case letters will not be u
 
 	GoPasswordCreator --all --length 8 --count 5 --file /home/d3xter/passwords.txt
 5 Passwords with 8 characters per password will be written into /home/d3xter/passwords.txt
+
+
+
+TODO
+====
+
+I will attempt to add the following features:
+- Add a **--help** flag that prints out a list of flags for the user.
+
